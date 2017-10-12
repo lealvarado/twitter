@@ -34,6 +34,11 @@
     <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Retype Your Password...", class: "form-control" %>
   </div>
 
+  <div class="form-group">
+    <strong>Upload a Profile Picture</strong>
+    <%= f.file_field :avatar %>
+  </div>
+
   <div class="actions">
     <%= f.submit "Sign up", class: "btn btn-success" %>
   </div>
